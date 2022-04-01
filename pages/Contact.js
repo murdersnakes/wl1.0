@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Head from "next/dist/shared/lib/head";
 import styles from '../styles/contact.module.scss';
-import { useState } from "react/cjs/react.production.min";
+import { useState } from "react/cjs/react.development";
 
 export default function Contact() {
 
