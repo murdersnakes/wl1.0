@@ -1,0 +1,48 @@
+@import '../theme/color.module.scss';
+
+.nav{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,1);
+    background-color: $light;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+
+    .logo{
+        font-size: 3.6rem;
+        letter-spacing: .4rem;
+        display: block;
+        cursor: pointer;
+        margin-left: 6%;
+
+        a{
+            color: $dark;
+            font-family:'EB Garamond', serif;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        margin-right: 6%;
+
+        a{
+            border: 2px solid $primary;
+            margin-left: 10px;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 600;
+            background-color: $primary;
+            color: $light;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $light;
+                color: $primary;
+                border-color: $primary;
+            }
+        }
+    } 
+}
+

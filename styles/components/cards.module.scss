@@ -1,0 +1,130 @@
+@import '../theme/color.module.scss';
+
+
+.wrapper{
+    width: 100%;
+    height: max-content;
+    background-color: $dark;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+}
+
+.container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 100px 0px;
+
+    .card{
+        position: relative;
+        width: 325px;
+        background-color: white;
+        padding: 8%;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        .pricing{
+            position: absolute;
+            width: 100px;
+            height: 120px;
+            background-color: $primary;
+            top: -18px;
+            right: 30px;
+            clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 85%, 0% 100%);
+
+
+
+            span{
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: white;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+
+        .title{
+            h4{
+                color: grey;
+                margin: 0;
+                font-size: 1.2rem;
+            }
+
+            h5{
+                font-size: 3.1rem;
+                margin:0 0 30px 0;
+                padding-top: 8px;
+
+            }
+        }
+
+        .list{
+            position: static;
+            height: 200px;
+            overflow-y: auto;
+
+
+            ul{
+                margin-bottom: 25px;
+                
+
+                li{
+                    display: flex;
+                    align-items: center;
+
+                    span{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        
+
+        .cta a{
+            border: 2px solid $primary;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 600;
+            background-color: $primary;
+            color: $light;
+            cursor: pointer;
+    
+            &:hover{
+                background-color: $light;
+                color: $primary;
+                border-color: $primary;
+            }
+        }
+
+        .cta{
+            margin-top: 40px;
+        }
+    }
+}
+
+/* width */
+.list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .list::-webkit-scrollbar-track {
+    background: $primary;
+  }
+  
+  /* Handle */
+  .list::-webkit-scrollbar-thumb {
+    background: rgb(228, 228, 228);
+  }
+  
+  /* Handle on hover */
+  .list::-webkit-scrollbar-thumb:hover {
+    background: rgb(187, 187, 187);
+  }

@@ -1,0 +1,52 @@
+@import '../theme/color.module.scss';
+
+.container {
+    padding: 100px 0;
+    width: 100%;
+    background: rgb(160, 28, 148);
+    background: linear-gradient(153deg, rgba(160, 28, 148, 1) 0%, rgb(55, 0, 49) 79%);
+
+    h1 {
+        width: max-content;
+        margin: 0 auto;
+        font-size: 2.8rem;
+        padding-bottom: 50px;
+        color: $light;
+    }
+
+    .grid {
+        display: grid;
+        width: 90%;
+        gap: 10px;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-items: center;
+
+        .card {
+
+            h2 {
+                color: $light;
+            }
+
+            a {
+                color: $light;
+                text-decoration: underline;
+            }
+
+            .image {
+                width: 350px;
+                height: 200px;
+                position: relative;
+                overflow: hidden;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transition: 250ms ease;
+                border-radius: 15px;
+                overflow: hidden;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

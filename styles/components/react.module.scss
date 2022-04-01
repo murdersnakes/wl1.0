@@ -1,0 +1,56 @@
+@import '../theme/color.module.scss';
+
+.wrapper {
+    background: rgb(223, 223, 223);
+    background: linear-gradient(153deg, rgba(223, 223, 223, 1) 37%, rgba(160, 28, 148, 1) 100%);
+    padding: 30px 0;
+}
+
+
+.reactBanner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+    .info {
+        width: 35%;
+
+        .react {
+            height: 200px;
+            width: 400px;
+            position: relative;
+        }
+    }
+
+    .cta {
+        width: 35%;
+
+        h2 {
+            font-size: 3.8rem;
+        }
+
+        .buttons {
+            display: flex;
+
+            a {
+                border: 2px solid $primary;
+                margin-right: 10px;
+                padding: 10px 20px;
+                border-radius: 15px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 600;
+                background-color: $primary;
+                color: $light;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $light;
+                    color: $primary;
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+}

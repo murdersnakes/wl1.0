@@ -1,0 +1,61 @@
+@import './theme/color.module.scss';
+
+
+.container{
+    height: 88vh;
+    position: relative;
+
+    .image{
+        height: 88vh;
+        width: 100%;
+        position: relative;
+        display: block;
+        clip-path: polygon(50% 0, 25% 50%, 50% 100%, 25% 100%, 0 50%, 25% 0);
+        background-image: url("../public/ocean.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .info{
+        position: absolute;
+        width: max-content;
+        height: 100%;
+        top:0;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        h2{
+            font-size: 2.1rem;
+            color: $dark;
+        }
+
+        ul{
+            li{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .cta{
+            margin-top: 10%;
+
+            a{
+                color: $dark;
+                background-color: $light;
+                border: 1px solid $dark;
+                padding: 8px 22px;
+                transition: 250ms ease;
+                margin: 5px;
+    
+                &:hover{
+                    background-color: $primary;
+                    color: $light;
+                }
+            }
+        }
+    }
+}
