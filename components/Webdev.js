@@ -17,11 +17,8 @@ export default function Webdev() {
                     <li><BsCheck size={40} color="purple" /> <span>Easy to use - Professional UX/UI design</span></li>
                 </ul>
                 <div className={styles.cta}>
-                    <Link href="/Website-Development">
-                        <a>More info</a>
-                    </Link>
                     <Link href="/Contact">
-                        <a>Enquire</a>
+                        <a>Get a free quote</a>
                     </Link>
                 </div>
             </div>

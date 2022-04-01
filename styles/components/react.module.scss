@@ -1,9 +1,10 @@
 @import '../theme/color.module.scss';
 
 .wrapper {
-    background: rgb(223, 223, 223);
-    background: linear-gradient(153deg, rgba(223, 223, 223, 1) 37%, rgba(160, 28, 148, 1) 100%);
+    //background: rgb(223, 223, 223);
+    //background: linear-gradient(153deg, rgba(223, 223, 223, 1) 37%, rgba(160, 28, 148, 1) 100%);
     padding: 30px 0;
+    @include primary-gradient;
 }
 
 
@@ -16,23 +17,29 @@
 
     .info {
         width: 35%;
+        color: $light;
 
         .react {
             height: 200px;
             width: 400px;
             position: relative;
         }
+
     }
 
     .cta {
         width: 35%;
+        text-align: center;
 
         h2 {
             font-size: 3.8rem;
+            color: $light;
         }
 
         .buttons {
             display: flex;
+            width: 100%;
+            justify-content: center;
 
             a {
                 border: 2px solid $primary;
@@ -50,6 +57,40 @@
                     color: $primary;
                     border-color: $primary;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .reactBanner {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+
+        .info {
+            width: 100%;
+            padding: 0 6%;
+
+            .react {
+                height: 150px;
+                width: 300px;
+                position: relative;
+            }
+        }
+
+        .cta {
+            width: 100%;
+            padding: 3% 6%;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .buttons {
+                width: 100%;
+                justify-content: space-around;
             }
         }
     }

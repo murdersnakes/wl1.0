@@ -1,28 +1,28 @@
 @import '../theme/color.module.scss';
 
-.container{
+.container {
     height: 100vh;
     position: relative;
-    background-color: $dark;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
-    
+    @include dark-gradient;
 
-    .image{
+
+    .image {
         height: 100vh;
         width: 100%;
         position: relative;
         display: block;
         clip-path: polygon(75% 0, 100% 50%, 75% 100%, 50% 100%, 75% 50%, 50% 0);
-        background-image: url("../../public/abstract-purple.jpg");
+        @include primary-gradient;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
-    .info{
+
+    .info {
         position: absolute;
         width: max-content;
-        top:0;
+        top: 0;
         right: 50%;
         height: 100%;
         display: flex;
@@ -31,14 +31,14 @@
         color: $light;
 
 
-        h2{
+        h2 {
             font-size: 3.2rem;
             color: $light;
             margin-bottom: 12px;
         }
 
-        ul{
-            li{
+        ul {
+            li {
                 display: flex;
                 align-items: center;
                 font-size: 1.3rem;
@@ -46,10 +46,10 @@
             }
         }
 
-        .cta{
+        .cta {
             margin-top: 10%;
 
-            a{
+            a {
                 border: 2px solid $primary;
                 margin-right: 10px;
                 padding: 10px 20px;
@@ -59,11 +59,42 @@
                 background-color: $primary;
                 color: $light;
                 cursor: pointer;
-    
-                &:hover{
+
+                &:hover {
                     background-color: $light;
                     color: $primary;
                     border-color: $primary;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        .image {
+            clip-path: polygon(100% 0, 100% 50%, 100% 100%, 97% 100%, 97% 50%, 97% 0);
+        }
+
+        .info {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            padding: 6%;
+
+            h2 {
+                font-size: 2.8rem;
+                padding-bottom: 30px;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    font-size: 1rem;
+                    padding-bottom: 30px;
                 }
             }
         }
