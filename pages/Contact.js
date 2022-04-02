@@ -20,7 +20,7 @@ export default function Contact() {
             <Layout>
                 <div className={styles.container}>
                     <div className={styles.card}>
-                        <form onSubmit={handleSubmit}>
+                        <form>
                             <h1>Send us a message</h1>
 
                             <label htmlFor="fullname">Full name</label>
