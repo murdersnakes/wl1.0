@@ -15,8 +15,8 @@ export default function Cards() {
                         <FaMedal size={40} color="#CD7F32"></FaMedal>
                     </div>
                     <div className={styles.title}>
-                        <h4>5 day delivery</h4>
-                        <h5>Basic</h5>
+                        <h1>5 day delivery</h1>
+                        <h2>Basic</h2>
                     </div>
                     <div className={styles.list}>
                         <ul>
@@ -32,8 +32,8 @@ export default function Cards() {
                         </ul>
                     </div>
                     <div className={styles.cta}>
-                        <Link href="/Basic">
-                            <a>More Info</a>
+                        <Link href="/Contact">
+                            <a>Get started now</a>
                         </Link>
                     </div>
                 </div>
@@ -46,8 +46,8 @@ export default function Cards() {
                         <FaMedal size={40} color="silver"></FaMedal>
                     </div>
                     <div className={styles.title}>
-                        <h4>21 day delivery</h4>
-                        <h5>Professional</h5>
+                        <h1>21 day delivery</h1>
+                        <h2>Professional</h2>
                     </div>
                     <div className={styles.list}>
                         <ul>
@@ -65,8 +65,8 @@ export default function Cards() {
                         </ul>
                     </div>
                     <div className={styles.cta}>
-                        <Link href="/Professional">
-                            <a>Enquire</a>
+                        <Link href="/Contact">
+                            <a>Get started now</a>
                         </Link>
                     </div>
                 </div>
@@ -79,8 +79,8 @@ export default function Cards() {
                         <FaMedal size={40} color="gold"></FaMedal>
                     </div>
                     <div className={styles.title}>
-                        <h4>6 week delivery</h4>
-                        <h5>Enterprise</h5>
+                        <h1>6 week delivery</h1>
+                        <h2>Enterprise</h2>
                     </div>
                     <div className={styles.list}>
                         <ul>
@@ -102,8 +102,8 @@ export default function Cards() {
                         </ul>
                     </div>
                     <div className={styles.cta}>
-                        <Link href="/Enterprise">
-                            <a>Enquire</a>
+                        <Link href="/Contact">
+                            <a>Get started now</a>
                         </Link>
                     </div>
                 </div>
