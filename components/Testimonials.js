@@ -9,7 +9,7 @@ export default function Testimonials() {
         <section id="testimonials" className={styles.container}>
             <div className={styles.card}>
                 <ImQuotesLeft size={35} color="purple" />
-                <p>Working with Michael was a real pleasure. From our initial meeting in May 2021, my website was live in 5 days. I've had bad experiences working with web developers in the past and I could not reccommend Weblift enough! 10/10.</p>
+                <p>Working with Michael was a real pleasure. From our initial meeting in May 2021, my website was live in 5 days. I&apos;ve had bad experiences working with web developers in the past and I could not reccommend Weblift enough! 10/10.</p>
 
                 <div className={styles.stars}>
                     <FaStar color="purple" />
@@ -46,7 +46,7 @@ export default function Testimonials() {
                     <FaStar color="purple" />
                     <FaStar color="purple" />
                 </div>
-                <h1>Damien O'Reilly</h1>
+                <h1>Damien O&apos;Reilly</h1>
                 <h2>MD - EDT Car Lessons</h2>
             </div>
         </section>
